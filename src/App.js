@@ -9,7 +9,6 @@ import TodoActions from './actions/Todo'
 
 import './App.css';
 
-
 const App = () => {
   const [todos, dispatch] = useReducer(TodoReducer, []);
   const todoActions = TodoActions(dispatch);
@@ -18,8 +17,8 @@ const App = () => {
     <TodoContext.Provider value={{ todos, actions: todoActions }}>
       <div className="app">
         <TodoInput />
-        {todos.length>0 ? <TodoList />: <p>Let's do something!</p>}
-        {todos.length>0 && <Controls />}
+        {todos.length > 0 ? <TodoList /> : <p>Let's do something!</p>}
+        {todos.length > 0 && <Controls />}
       </div>
     </TodoContext.Provider>
   )

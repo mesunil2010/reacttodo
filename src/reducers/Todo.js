@@ -3,8 +3,7 @@ import ACTIONS from '../actions/types/index'
 
 const newTodo = (name) => {
     return { id: Date.now(), key: Date.now(), name, completed: false }
-  }
-
+}
   
 const TodoReducer = (todos = [], action) => {
     switch (action.type) {
