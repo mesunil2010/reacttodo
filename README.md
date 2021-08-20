@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project shows how to build simple todo app using useReducer and useContext hooks in reactJs
 
-##Features
+## Features
 
 - Create a task
 - Mark as completed
